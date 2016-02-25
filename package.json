@@ -11,8 +11,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "postinstall" : "/bin/bash nginx-suid/suid.sh"
+    "start": "forever start --minUptime 1000 --spinSleepTime 1000 server.js",
+    "stop" : "forever stop server.js",
+    "postinstall": "/bin/bash nginx-suid/suid.sh"
   },
   "author": "",
   "private": true
