@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "forever start --uid \"nginx-proxy-rest\" --minUptime 1000 --spinSleepTime 1000 --killSignal=SIGTERM server.js",
     "stop" : "forever stop server.js",
-    "preinstall" : "/bin/bash pre-install.sh"
+    "preinstall" : "/bin/bash pre-install.sh",
     "postinstall": "/bin/bash nginx-suid/suid.sh",
     "nginxclean" : "rm nginx-conf/*.conf"
   },
