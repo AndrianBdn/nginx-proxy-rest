@@ -6,7 +6,7 @@ RESULT=$(./nginx-suid/nginx-as-root -v 2>&1)
 
 if [[ $RESULT != *"nginx version"* ]]; then
 
-    echo "Error during install (pre-install)"
+    echo "Error during install (pre-install.sh)"
     echo "we expect nginx-as-root wrapper to call nginx"
     echo "possible reasons for fail"
     echo "  - nginx-as-root binary is compiled for Mac, the whole thing is indendent for Mac as now"
