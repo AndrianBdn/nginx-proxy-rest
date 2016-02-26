@@ -11,9 +11,10 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "forever start --minUptime 1000 --spinSleepTime 1000 server.js",
+    "start": "forever start --uid \"nginx-proxy-srv\" --minUptime 1000 --spinSleepTime 1000 --killSignal=SIGTERM server.js",
     "stop" : "forever stop server.js",
-    "postinstall": "/bin/bash nginx-suid/suid.sh"
+    "postinstall": "/bin/bash nginx-suid/suid.sh",
+    "nginxclean" : "rm nginx-conf/*.conf"
   },
   "author": "",
   "private": true
