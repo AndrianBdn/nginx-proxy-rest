@@ -48,6 +48,8 @@ curl -X DELETE http://192.168.64.1:1081/proxy/[endpoint]
 
 - you will need to install nginx on your Mac (brew install nginx)
 - run npm install (will ask for sudo)
+- start service: npm start  (no autostart configration yet, you will need to create your own launchd file) 
+
 
 
 # Production Alternatives
