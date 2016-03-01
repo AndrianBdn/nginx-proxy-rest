@@ -34,7 +34,7 @@ example: **http://192.168.64.1:1081/proxy/myhost.local/to-http-url/192.168.1.11%
 
 Just use ".__xip.io" zone to create [xip.io](http://xip.io) proxy host. 
 
-Example: **curl http://127.0.0.1:1081/proxy/test.__xip.io/to-port/8080**
+Example: **curl -X PUT http://127.0.0.1:1081/proxy/test.__xip.io/to-port/8080**
 
 After this you can use http://test.127.0.0.1.xip.io/
 
