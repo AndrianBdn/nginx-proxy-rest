@@ -11,8 +11,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "forever start -a --uid \"nginx-proxy-rest\" --minUptime 1000 --spinSleepTime 1000 --killSignal=SIGTERM server.js",
-    "stop" : "forever stop server.js",
+    "start": "forever start -a -m1 --uid \"nginx-proxy-rest\" --minUptime 1000 --spinSleepTime 1000 --killSignal=SIGTERM server.js",
+    "stop" : "forever stop \"nginx-proxy-rest\" | xargs echo",
     "preinstall" : "/bin/bash pre-install.sh",
     "postinstall": "/bin/bash nginx-suid/suid.sh",
     "nginxclean" : "rm nginx-conf/*.conf"
