@@ -3,6 +3,7 @@
 
 This is very simple node-based server that controls **nginx** (add/remove HTTP reverse proxy records) using REST API.
 
+Development-only, Mac-only. 
 
 # Usage 
 
